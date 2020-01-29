@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Podcast Detail Controller-->
+        <scene sceneID="cSg-SD-XNs">
+            <objects>
+                <viewController storyboardIdentifier="PodcastDetailViewController" id="qd9-9P-7Ok" customClass="PodcastDetailController" customModule="Programmatic_UI_Xibs_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W62-ly-CXd" customClass="PodcastDetail" customModule="Programmatic_UI_Xibs_Storyboards" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3uI-TV-lUV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="010-fR-1PQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEF-Bl-39Q">
+                                <rect key="frame" x="0.0" y="464" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TEF-Bl-39Q" firstAttribute="trailing" secondItem="rxT-pF-2p5" secondAttribute="trailing" id="6FP-Zk-4kA"/>
+                            <constraint firstItem="TEF-Bl-39Q" firstAttribute="leading" secondItem="rxT-pF-2p5" secondAttribute="leading" id="W3e-rB-lnN"/>
+                            <constraint firstItem="rxT-pF-2p5" firstAttribute="trailing" secondItem="3uI-TV-lUV" secondAttribute="trailing" id="aNp-eN-k3p"/>
+                            <constraint firstItem="3uI-TV-lUV" firstAttribute="top" secondItem="rxT-pF-2p5" secondAttribute="top" id="nZW-mL-5Fj"/>
+                            <constraint firstItem="3uI-TV-lUV" firstAttribute="leading" secondItem="rxT-pF-2p5" secondAttribute="leading" id="p8K-p4-P6A"/>
+                            <constraint firstItem="TEF-Bl-39Q" firstAttribute="top" secondItem="3uI-TV-lUV" secondAttribute="bottom" constant="20" id="wwS-SE-gPm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rxT-pF-2p5"/>
+                    </view>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="TEF-Bl-39Q" id="fXQ-RN-DSN"/>
+                        <outlet property="podcastImageView" destination="3uI-TV-lUV" id="ZJl-b5-WKB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDf-Ck-zf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+</document>
